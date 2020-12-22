@@ -37,10 +37,10 @@ interface NotePageProps {
 }
 
 export const NotePage: FunctionComponent<NotePageProps> = ({
-  data,
-  pageContext,
-  location,
-}) => {
+                                                             data,
+                                                             pageContext,
+                                                             location,
+                                                           }) => {
   if (!data) {
     return null
   }
@@ -76,16 +76,22 @@ export const NotePage: FunctionComponent<NotePageProps> = ({
           {emoji && (
             <Box
               sx={{
-                fontSize: 7,
+                float: 'left',
+                fontSize: 3,
                 lineHeight: 1,
-                mb: 3,
+                mt: 1,
+                mr: 2,
               }}
             >
               <span role="img">{emoji}</span>
             </Box>
           )}
 
-          <Heading as="h1" variant="noteTitle">
+          <Heading sx={{
+            fontSize: 5,
+            lineHeight: 1,
+            mb: 3,
+          }} as="h1" variant="noteTitle">
             {title}
           </Heading>
 
@@ -126,6 +132,7 @@ export const NotePage: FunctionComponent<NotePageProps> = ({
             <Flex>
               <GoTag
                 sx={{
+                  fontFamily: 'mono',
                   color: 'input',
                   pointerEvents: 'none',
                   mr: 2,

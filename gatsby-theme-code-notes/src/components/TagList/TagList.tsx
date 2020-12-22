@@ -40,6 +40,7 @@ export const TagList: FunctionComponent<TagNavProps> = ({
               to={`/tag/${tagName}`}
               key={index}
               sx={{
+                fontFamily: 'mono',
                 display: 'inline-flex',
                 mr: 1,
                 bg: tagColor,
