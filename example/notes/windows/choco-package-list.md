@@ -11,7 +11,7 @@ Small collection of choco auto installers for different usecases.
 ### PC
 
 ```bash
-choco install -y git nodejs vscode firacode webstorm keyboard-layout-creator
+choco install -y git nodejs vscode firacode webstorm
 ```
 
 ### Notebook
